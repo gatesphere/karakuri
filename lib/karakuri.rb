@@ -17,7 +17,11 @@ module Karakuri
       #TODO pass a format via parameter
       tag_list.each { |tag| tag_string << %&<a href="/tagged?tag=#{tag}" alt="articles concerning #{tag}" >#{tag}</a>, & }
     end
-    tag_string.strip.reverse.sub(",", "").reverse
+    if !tag_string.nil?
+      tag_string.strip.reverse.sub(",", "").reverse
+    else
+      tag_string
+    end
   end
   #
   # processes a csv-string into an array
