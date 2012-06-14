@@ -15,9 +15,9 @@ module Karakuri
     if tag_list
       tag_string = ""
       #TODO pass a format via parameter
-      tag_list.each { |tag| tag_string << %&<a href="/tagged?tag=#{tag}" alt="articles concerning #{tag}" >#{tag}</a> & }
+      tag_list.each { |tag| tag_string << %&<a href="/tagged?tag=#{tag}" alt="articles concerning #{tag}" >#{tag}</a>, & }
     end
-    tag_string
+    tag_string.strip.reverse.sub(",", "").reverse
   end
   #
   # processes a csv-string into an array
