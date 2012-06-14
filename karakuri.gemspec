@@ -7,5 +7,5 @@ Gem::Specification.new do |s|
   s.summary = %q{Simple utilities for Ruby-based blogs.}
   s.homepage = %q{https://github.com/gatesphere/karakuri}
   s.description = %q{Simple utilities for Ruby-based blogs.}
-  s.files = [ "README", "LICENSE", "lib/serious_blog_helper.rb", "lib/karakuri.rb"]
+  s.files = [ "README.md", "LICENSE", "lib/serious_blog_helper.rb", "lib/karakuri.rb"]
 end
